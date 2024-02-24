@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import Carousel from "./components/ui/carousel";
-
 
 export default function Home() {
   return (
@@ -146,7 +144,7 @@ export default function Home() {
   );
 }
 
-function CalendarCheckIcon(props) {
+function CalendarCheckIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       {...props}
@@ -169,7 +167,7 @@ function CalendarCheckIcon(props) {
   );
 }
 
-function HeartIcon(props) {
+function HeartIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       {...props}
@@ -188,7 +186,7 @@ function HeartIcon(props) {
   );
 }
 
-function SquareIcon(props) {
+function SquareIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       {...props}
