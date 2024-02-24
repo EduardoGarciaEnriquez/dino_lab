@@ -93,7 +93,7 @@ export default function Home() {
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                   Let us take care of you. We offer a range of services designed
                   to make your life easier and more enjoyable. From expert
-                  consultations to personalized recommendations, we're here to
+                  consultations to personalized recommendations, we are here to
                   help.
                 </p>
               </div>
