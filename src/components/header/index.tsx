@@ -12,7 +12,7 @@ function Header() {
   const [open, setOpen] = useState<boolean>(false)
 
   return (
-    <header className='flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 border-b border-gray-200 dark:border-gray-800'>
+    <header className='flex items-center justify-between px-4 py-4 border-b border-gray-200 dark:border-gray-800 fixed top-0 w-full z-10 bg-white dark:bg-gray-900'>
       <Link className='flex items-center space-x-2 text-xl font-medium' href='/'>
       <Image
           alt='Logo'
@@ -21,7 +21,7 @@ function Header() {
           height={40}
         />
       </Link>
-      <nav className=' hidden md:flex items-center gap-4 text-sm font-medium'>
+      <nav className='hidden md:flex items-center gap-4 text-sm font-medium'>
         <Link className='text-gray-900 hover:underline dark:text-gray-50' href='#'>
           Catalogo
         </Link>
