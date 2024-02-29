@@ -1,59 +1,10 @@
-import Link from "next/link";
 import Image from "next/image";
 
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4 border-b border-gray-200 dark:border-gray-800">
-        <Link
-          className="flex items-center space-x-2 text-xl font-medium"
-          href="#"
-        >
-          <SquareIcon className="w-6 h-6" />
-          <span className="sr-only">Home</span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-4 text-sm font-medium">
-          <Link
-            className="text-gray-900 hover:underline dark:text-gray-50"
-            href="#"
-          >
-            Home
-          </Link>
-          <Link
-            className="text-gray-900 hover:underline dark:text-gray-50"
-            href="#"
-          >
-            Catalog
-          </Link>
-          <Link
-            className="text-gray-900 hover:underline dark:text-gray-50"
-            href="#"
-          >
-            Services
-          </Link>
-          <Link
-            className="text-gray-900 hover:underline dark:text-gray-50"
-            href="#"
-          >
-            Contact
-          </Link>
-        </nav>
-        <div className="flex items-center gap-4">
-          <Link
-            className="text-sm font-medium underline hover:no-underline"
-            href="#"
-          >
-            Sign in
-          </Link>
-          <Link
-            className="text-sm font-medium underline hover:no-underline"
-            href="#"
-          >
-            Sign up
-          </Link>
-        </div>
-      </header>
+      
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -186,21 +137,4 @@ function HeartIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-function SquareIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <rect width="18" height="18" x="3" y="3" rx="2" />
-    </svg>
-  );
-}
+
