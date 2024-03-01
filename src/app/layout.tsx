@@ -3,18 +3,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Header from '../components/header'
-import image from './image.png'
 
 const inter = Inter({ subsets: ["latin"] });
 
-interface ExtendedMetadata extends Metadata {
-  image: string
-}
-
-export const metadata: ExtendedMetadata = {
+export const metadata: Metadata = {
   title: "Dino Lab",
-  description: "Diseño e Impresión en 3D",
-  image: image.toString()
+  description: "Diseño e Impresión en 3D"
 };
 
 export default function RootLayout({
