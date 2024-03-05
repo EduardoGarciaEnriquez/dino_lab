@@ -6,9 +6,15 @@ import { Typography } from '@mui/material'
 import { CardActionArea } from '@mui/material'
 import { Button } from '@mui/material'
 
-import Slider from 'components/components/ui/carousel'
+import Slider from '@/components/ui/carousel'
 import BannerImg1 from '../assets/images/dino_lab_banner.png'
-import BannerImg2 from '../assets/images/IMG_20200701_081436.jpg'
+import img1 from '@/assets/images/banner_img_01.jpg'
+import img2 from '@/assets/images/banner_img_02.jpg'
+import img3 from '@/assets/images/banner_img_03.jpg'
+import img4 from '@/assets/images/banner_img_04.jpg'
+import img5 from '@/assets/images/banner_img_05.jpg'
+// import img6 from '@/assets/images/banner_img_06.jpg'
+import img7 from '@/assets/images/banner_img_07.jpg'
 
 export default function Home() {
   return (
@@ -25,23 +31,121 @@ export default function Home() {
                   width={1024}
                   height={1024}
                 />
-                <Image
+
+                <div className='relative'>
+                  <Image
+                    alt='Image'
+                    className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'
+                    src={img1}
+                    width={1024}
+                    height={1024}
+                    loading='lazy'
+                  />
+                  <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-white text-black rounded-md p-2 md:p-6 lg:p-10 text-wrap text-sm sm:text-lg'>
+                    <h3 className='font-bold'>Conoce más de lo que hacemos.</h3>
+                    <p>Ofrecemos servicios integrales de diseño e impresión en 3D</p>
+                  </div>
+                </div>
+
+                <div className='relative'>
+                  <Image
+                    alt='Image'
+                    className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'
+                    src={img2}
+                    width={1024}
+                    height={1024}
+                    loading='lazy'
+                  />
+                  <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
+                    <p>impresión 3D monocromo</p>
+                  </div>
+                </div>
+
+                <div className='relative'>
+                  <Image
+                    alt='Image'
+                    className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'
+                    src={img3}
+                    width={1024}
+                    height={1024}
+                    loading='lazy'
+                  />
+                  <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
+                    <p>Diseño y optimización para impresión 3D de piezas funcionales</p>
+                  </div>
+                </div>
+
+                <div className='relative'>
+                  <Image
+                    alt='Image'
+                    className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'
+                    src={img4}
+                    width={1024}
+                    height={1024}
+                    loading='lazy'
+                  />
+                  <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
+                    <p>Materiales flexibles (TPU-A)</p>
+                  </div>
+                </div>
+
+                <div className='relative'>
+                  <Image
+                    alt='Image'
+                    className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'
+                    src={img5}
+                    width={1024}
+                    height={1024}
+                    loading='lazy'
+                  />
+                  <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
+                    <p>Variedad de colores</p>
+                  </div>
+                </div>
+
+                {/* <div className='relative'>
+                  <Image
                   alt='Image'
-                  className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full'
-                  src={BannerImg2}
+                  className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full [zoom: 2.5]'
+                  src={img6}
                   width={1024}
                   height={1024}
+                  loading='lazy'
                 />
+                <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
+                  <p>FDA Estructural</p>
+                </div>
+                </div> */}
+
+                <div className='relative'>
+                  <Image
+                    alt='Image'
+                    className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full [zoom: 2.5]'
+                    src={img7}
+                    width={1024}
+                    height={1024}
+                    loading='lazy'
+                  />
+                  <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
+                    <p>Diseño personalizado e impresión por mayoreo.</p>
+                  </div>
+                </div>
               </Slider>
 
               <div className='flex flex-col justify-center space-y-4'>
                 <div className='space-y-6 md:space-y-10'>
-                  <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Diseño e impresión en 3D</h1>
+                  <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
+                    Dino Lab: Diseño e impresión en 3D
+                  </h1>
                   <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
-                    Beautifully designed and crafted products for your lifestyle. Discover the perfect items to enhance
-                    your home, office, and beyond.
+                    Servicios de impresión y diseño en 3D de primera calidad para dar vida a tus ideas. !Permítenos
+                    ayudarte a crear y <b>libera tu creatividad</b>!
                   </p>
-                  <Button variant='outlined' href='#outlined-buttons' className='bg-black border-none text-white w-[100%] animate-bounce text-xl hover:animate-none hover:text-green-600 hover:border-green-600'>
+                  <Button
+                    variant='outlined'
+                    href='#outlined-buttons'
+                    className='bg-black border-none text-white w-[100%] animate-bounce text-xl hover:animate-none hover:text-green-600 hover:border-green-600'
+                  >
                     Contáctanos
                   </Button>
                 </div>
@@ -55,8 +159,8 @@ export default function Home() {
               <div className='flex flex-col justify-center space-y-2'>
                 <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>Nuestros servicios</h2>
                 <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
-                  Let us take care of you. We offer a range of services designed to make your life easier and more
-                  enjoyable. From expert consultations to personalized recommendations, we are here to help.
+                  Permítenos ayudarte. Ofrecemos una variedad de servicios diseñados para hacer tu vida más fácil. Desde
+                  consultas expertas hasta recomendaciones personalizadas, estamos aquí para ayudarte.
                 </p>
               </div>
               <div className='grid gap-6 md:grid-cols-3 text-center lg:text-left'>
@@ -64,22 +168,24 @@ export default function Home() {
                   <IoIosFlask className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Impresión en 3D</h3>
                   <p className='text-sm text-gray-500 dark:text-gray-400'>
-                    Let us curate the perfect day for you with exclusive access and tailored recommendations.
+                    Impresión en filamento PLA, TPU-A y PET-G en varios colores. Prototipos económicos y piezas de alta
+                    calidad.
                   </p>
                 </div>
                 <div className='flex flex-col gap-1'>
                   <IoIosCreate className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Diseño y modelado 3D</h3>
                   <p className='text-sm text-gray-500 dark:text-gray-400'>
-                    Gain insights from our team of experts to elevate your knowledge and skills.
+                    Creación de diseños y modelos en 3D utilizando medidas especificas o diseños de referencia.
                   </p>
                 </div>
                 <div className='flex flex-col gap-1'>
                   <IoIosConstruct className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Optimización de piezas</h3>
                   <p className='text-sm text-gray-500 dark:text-gray-400'>
-                    Participate in our wellness workshops to recharge your mind and body.
+                    Asesoramiento <b>gratuito</b> para reducir costos, tiempo y errores de impresión, al contratar cualquiera de nuestros servicios
                   </p>
+                  
                 </div>
               </div>
             </div>
