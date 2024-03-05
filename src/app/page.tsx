@@ -4,6 +4,7 @@ import { IoIosFlask, IoIosCreate, IoIosConstruct } from 'react-icons/io'
 import { Card, CardContent } from '@mui/material'
 import { Typography } from '@mui/material'
 import { CardActionArea } from '@mui/material'
+import { Button } from '@mui/material'
 
 import Slider from 'components/components/ui/carousel'
 import BannerImg1 from '../assets/images/dino_lab_banner.png'
@@ -11,9 +12,9 @@ import BannerImg2 from '../assets/images/IMG_20200701_081436.jpg'
 
 export default function Home() {
   return (
-    <div className='flex flex-col min-h-screen pt-8 md:pt-0'>
+    <div className='flex flex-col min-h-screen md:pt-0 pb-12'>
       <main className='flex-1'>
-        <section className='w-full py-12 md:py-24 lg:py-24'>
+        <section className='w-full pt-6 md:py-24 lg:py-24'>
           <div className='container px-4 md:px-6'>
             <div className='grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]'>
               <Slider>
@@ -34,12 +35,15 @@ export default function Home() {
               </Slider>
 
               <div className='flex flex-col justify-center space-y-4'>
-                <div className='space-y-2'>
+                <div className='space-y-6 md:space-y-10'>
                   <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>Diseño e impresión en 3D</h1>
                   <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
                     Beautifully designed and crafted products for your lifestyle. Discover the perfect items to enhance
                     your home, office, and beyond.
                   </p>
+                  <Button variant='outlined' href='#outlined-buttons' className='bg-black border-none text-white w-[100%] animate-bounce text-xl hover:animate-none hover:text-green-600 hover:border-green-600'>
+                    Contáctanos
+                  </Button>
                 </div>
               </div>
             </div>
