@@ -17,7 +17,7 @@ function NavigationTop() {
           <Button>Blog</Button>
         </Link>
 
-        <Link className='text-green-600 text-3xl animate-bounce hover:animate-none' href='#'>
+        <Link className='text-green-600 text-3xl animate-bounce hover:animate-none' href='https://wa.me/523334946342?text=¡Hola!%20Quiero%20más%20información%20sobre%20los%20servicios%20de%20DinoLab' target='_blank'>
           <IoLogoWhatsapp/>
         </Link>
       </nav>

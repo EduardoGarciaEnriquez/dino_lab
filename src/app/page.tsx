@@ -141,10 +141,12 @@ export default function Home() {
                     Servicios de impresión y diseño en 3D de primera calidad para dar vida a tus ideas. ¡Permítenos
                     ayudarte a crear y <b>libera tu creatividad</b>!
                   </p>
+
                   <Button
                     variant='outlined'
-                    href='#outlined-buttons'
+                    href='https://wa.me/523334946342?text=¡Hola!%20Quiero%20más%20información%20sobre%20los%20servicios%20de%20DinoLab'
                     className='bg-black border-none text-white w-[100%] animate-bounce text-xl hover:animate-none hover:text-green-600 hover:border-green-600'
+                    target='_blank'
                   >
                     Contáctanos
                   </Button>
@@ -183,9 +185,9 @@ export default function Home() {
                   <IoIosConstruct className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Optimización de piezas</h3>
                   <p className='text-sm text-gray-500 dark:text-gray-400'>
-                    Asesoramiento <b>gratuito</b> para reducir costos, tiempo y errores de impresión, al contratar cualquiera de nuestros servicios
+                    Asesoramiento <b>gratuito</b> para reducir costos, tiempo y errores de impresión, al contratar
+                    cualquiera de nuestros servicios
                   </p>
-                  
                 </div>
               </div>
             </div>
