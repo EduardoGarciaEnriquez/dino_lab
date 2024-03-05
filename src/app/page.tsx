@@ -138,7 +138,7 @@ export default function Home() {
                     Dino Lab: Diseño e impresión en 3D
                   </h1>
                   <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
-                    Servicios de impresión y diseño en 3D de primera calidad para dar vida a tus ideas. !Permítenos
+                    Servicios de impresión y diseño en 3D de primera calidad para dar vida a tus ideas. ¡Permítenos
                     ayudarte a crear y <b>libera tu creatividad</b>!
                   </p>
                   <Button
