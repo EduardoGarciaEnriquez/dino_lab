@@ -7,7 +7,7 @@ import NavigationBar from '../components/navigation-bar'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dino Lab",
+  title: "Dino Lab | Diseño e impresión en 3D",
   description: "Diseño e Impresión en 3D"
 };
 
