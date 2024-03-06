@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { Suspense } from 'react'
 
 import ClientLayout from './client-layout'
 
@@ -15,7 +16,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <ClientLayout>{children}</ClientLayout>
+      <Suspense>
+        <ClientLayout>{children}</ClientLayout>
+      </Suspense>
     </html>
   )
 }
