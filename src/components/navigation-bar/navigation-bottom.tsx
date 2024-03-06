@@ -22,6 +22,7 @@ export default function NavigationBottom() {
           href='https://wa.me/523334946342?text=¡Hola!%20Quiero%20más%20información%20sobre%20los%20servicios%20de%20DinoLab'
           label={<span className='dark:text-gray-50'>Contacto</span>}
           icon={<IoLogoWhatsapp className=' text-green-600 text-3xl' />}
+          target='_blank'
         />
       </BottomNavigation>
     </Box>
