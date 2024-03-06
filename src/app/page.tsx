@@ -103,20 +103,6 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* <div className='relative'>
-                  <Image
-                  alt='Image'
-                  className='mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full [zoom: 2.5]'
-                  src={img6}
-                  width={1024}
-                  height={1024}
-                  loading='lazy'
-                />
-                <div className='absolute bottom-5 max-w-[calc(100%-40px)] right-5 opacity-80 bg-black text-white rounded-md p-2 text-wrap text-sm sm:text-lg'>
-                  <p>FDA Estructural</p>
-                </div>
-                </div> */}
-
                 <div className='relative'>
                   <Image
                     alt='Image'
@@ -205,18 +191,16 @@ export default function Home() {
                 </Typography>
               </div>
               <CardContent>
-                <Typography variant='body1' color='text.principal'>
-                  <ul className='list-disc px-4'>
-                    <li>Piezas de entre 5cm y 10cm</li>
-                    <li>
-                      <b>Precio de referencia, todas las piezas deben ser analizadas y cotizadas</b>
-                    </li>
-                    <li>Precio de mayoreo a partir de 30 piezas</li>
-                    <li>Colores disponibles Blanco y Negro</li>
-                    <li>Otros colores bajo pedido</li>
-                    <li>Calidad estandar resolución 0.6mm</li>
-                  </ul>
-                </Typography>
+                <ul className='list-disc px-4'>
+                  <li>Piezas de entre 5cm y 10cm</li>
+                  <li>
+                    <b>Precio de referencia, todas las piezas deben ser analizadas y cotizadas</b>
+                  </li>
+                  <li>Precio de mayoreo a partir de 30 piezas</li>
+                  <li>Colores disponibles Blanco y Negro</li>
+                  <li>Otros colores bajo pedido</li>
+                  <li>Calidad estandar resolución 0.6mm</li>
+                </ul>
               </CardContent>
             </CardActionArea>
           </Card>
@@ -232,18 +216,16 @@ export default function Home() {
                 </Typography>
               </div>
               <CardContent>
-                <Typography variant='body1' color='text.principal'>
-                  <ul className='list-disc px-4'>
-                    <li>Piezas de entre 10cm y 15cm</li>
-                    <li>
-                      <b>Precio de referencia, todas las piezas deben ser analizadas y cotizadas</b>
-                    </li>
-                    <li>Precio de mayoreo a partir de 20 piezas</li>
-                    <li>Colores disponibles Blanco y Negro</li>
-                    <li>Otros colores bajo pedido</li>
-                    <li>Calidad estandar resolución 0.6mm</li>
-                  </ul>
-                </Typography>
+                <ul className='list-disc px-4'>
+                  <li>Piezas de entre 10cm y 15cm</li>
+                  <li>
+                    <b>Precio de referencia, todas las piezas deben ser analizadas y cotizadas</b>
+                  </li>
+                  <li>Precio de mayoreo a partir de 20 piezas</li>
+                  <li>Colores disponibles Blanco y Negro</li>
+                  <li>Otros colores bajo pedido</li>
+                  <li>Calidad estandar resolución 0.6mm</li>
+                </ul>
               </CardContent>
             </CardActionArea>
           </Card>
@@ -259,18 +241,16 @@ export default function Home() {
                 </Typography>
               </div>
               <CardContent>
-                <Typography variant='body1' color='text.principal'>
-                  <ul className='list-disc px-4'>
-                    <li>Piezas de entre 15cm y 25cm</li>
-                    <li>
-                      <b>Precio de referencia, todas las piezas deben ser analizadas y cotizadas</b>
-                    </li>
-                    <li>Precio de mayoreo a partir de 10 piezas</li>
-                    <li>Colores disponibles Blanco y Negro</li>
-                    <li>Otros colores bajo pedido</li>
-                    <li>Calidad estandar resolución 0.6mm</li>
-                  </ul>
-                </Typography>
+                <ul className='list-disc px-4'>
+                  <li>Piezas de entre 15cm y 25cm</li>
+                  <li>
+                    <b>Precio de referencia, todas las piezas deben ser analizadas y cotizadas</b>
+                  </li>
+                  <li>Precio de mayoreo a partir de 10 piezas</li>
+                  <li>Colores disponibles Blanco y Negro</li>
+                  <li>Otros colores bajo pedido</li>
+                  <li>Calidad estandar resolución 0.6mm</li>
+                </ul>
               </CardContent>
             </CardActionArea>
           </Card>

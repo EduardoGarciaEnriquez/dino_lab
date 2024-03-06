@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { Inter } from 'next/font/google'
 
@@ -8,12 +8,11 @@ import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function ClientLayout({ children }: { children: React.ReactNode }) {
+function Layout({ children }: { children: React.ReactNode }) {
   const searchParams = useSearchParams()
-  const theme = searchParams.get('theme')
-
+  const theme = searchParams.get('theme') ?? 'dark'
   return (
-    <body className={`${inter.className} ${theme ?? 'dark'}`}>
+    <body className={`${inter.className} ${theme}`}>
       <NavigationBar />
       {children}
       <Footer />
@@ -21,4 +20,10 @@ function ClientLayout({ children }: { children: React.ReactNode }) {
   )
 }
 
-export default ClientLayout
+export default function ClientLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <Suspense>
+      <Layout>{children}</Layout>
+    </Suspense>
+  )
+}
