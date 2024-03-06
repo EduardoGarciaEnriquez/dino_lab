@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Suspense } from 'react'
 
-import ClientLayout from './client-layout'
+import ClientLayout from '../components/layout/client-layout'
 
 export const metadata: Metadata = {
   title: 'Dino Lab | Diseño e impresión en 3D',
