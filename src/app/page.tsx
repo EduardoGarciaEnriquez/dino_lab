@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { IoIosFlask, IoIosCreate, IoIosConstruct } from 'react-icons/io'
+import { IoIosFlask, IoIosCreate, IoIosConstruct, IoMdHeart } from 'react-icons/io'
 import { Card, CardContent } from '@mui/material'
 import { Typography } from '@mui/material'
 import { CardActionArea } from '@mui/material'
@@ -276,13 +276,6 @@ export default function Home() {
           </Card>
         </section>
       </main>
-      {/* <footer className='flex flex-col gap-2 py-4 sm:gap-4 text-sm'>
-        <div className='flex items-center justify-center space-x-2 text-xs'>
-          <span className='text-gray-500 '>Made with</span>
-          <HeartIcon className='h-4 w-4 text-gray-500 ' />
-          <span className='text-gray-500 '>by Acme Inc.</span>
-        </div>
-      </footer> */}
     </div>
   )
 }
