@@ -18,7 +18,7 @@ import img7 from '@/assets/images/banner_img_07.jpg'
 
 export default function Home() {
   return (
-    <div className='flex flex-col min-h-screen md:pt-0 pb-12'>
+    <div className='flex flex-col min-h-screen md:pt-0 pb-12 dark:bg-slate-900 dark:text-gray-400'>
       <main className='flex-1'>
         <section className='w-full pt-6 md:py-24 lg:py-24'>
           <div className='container px-4 md:px-6'>
@@ -137,7 +137,7 @@ export default function Home() {
                   <h1 className='text-3xl font-bold tracking-tighter sm:text-5xl'>
                     Dino Lab: Diseño e impresión en 3D
                   </h1>
-                  <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
+                  <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed '>
                     Servicios de impresión y diseño en 3D de primera calidad para dar vida a tus ideas. ¡Permítenos
                     ayudarte a crear y <b>libera tu creatividad</b>!
                   </p>
@@ -160,7 +160,7 @@ export default function Home() {
             <div className='grid gap-6 lg:grid-cols-2 lg:gap-12'>
               <div className='flex flex-col justify-center space-y-2'>
                 <h2 className='text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl'>Nuestros servicios</h2>
-                <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400'>
+                <p className='max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed '>
                   Permítenos ayudarte. Ofrecemos una variedad de servicios diseñados para hacer tu vida más fácil. Desde
                   consultas expertas hasta recomendaciones personalizadas, estamos aquí para ayudarte.
                 </p>
@@ -169,7 +169,7 @@ export default function Home() {
                 <div className='flex flex-col gap-1'>
                   <IoIosFlask className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Impresión en 3D</h3>
-                  <p className='text-sm text-gray-500 dark:text-gray-400'>
+                  <p className='text-sm text-gray-500 '>
                     Impresión en filamento PLA, TPU-A y PET-G en varios colores. Prototipos económicos y piezas de alta
                     calidad.
                   </p>
@@ -177,14 +177,14 @@ export default function Home() {
                 <div className='flex flex-col gap-1'>
                   <IoIosCreate className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Diseño y modelado 3D</h3>
-                  <p className='text-sm text-gray-500 dark:text-gray-400'>
+                  <p className='text-sm text-gray-500 '>
                     Creación de diseños y modelos en 3D utilizando medidas especificas o diseños de referencia.
                   </p>
                 </div>
                 <div className='flex flex-col gap-1'>
                   <IoIosConstruct className='w-12 h-12 self-center lg:self-start' />
                   <h3 className='font-semibold'>Optimización de piezas</h3>
-                  <p className='text-sm text-gray-500 dark:text-gray-400'>
+                  <p className='text-sm text-gray-500 '>
                     Asesoramiento <b>gratuito</b> para reducir costos, tiempo y errores de impresión, al contratar
                     cualquiera de nuestros servicios
                   </p>
@@ -278,9 +278,9 @@ export default function Home() {
       </main>
       {/* <footer className='flex flex-col gap-2 py-4 sm:gap-4 text-sm'>
         <div className='flex items-center justify-center space-x-2 text-xs'>
-          <span className='text-gray-500 dark:text-gray-400'>Made with</span>
-          <HeartIcon className='h-4 w-4 text-gray-500 dark:text-gray-400' />
-          <span className='text-gray-500 dark:text-gray-400'>by Acme Inc.</span>
+          <span className='text-gray-500 '>Made with</span>
+          <HeartIcon className='h-4 w-4 text-gray-500 ' />
+          <span className='text-gray-500 '>by Acme Inc.</span>
         </div>
       </footer> */}
     </div>
