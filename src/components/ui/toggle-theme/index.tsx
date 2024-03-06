@@ -11,9 +11,9 @@ function ToggleTheme() {
   return (
     <Link
       className='flex items-center space-x-2 text-xl font-medium'
-      href={theme === 'dark' ? '/?theme=light' : '/?theme=dark'}
+      href={theme === 'dark' || theme === null ? '/?theme=light' : '/?theme=dark'}
     >
-      {theme === 'dark' ? (
+      {theme === 'dark' || theme === null ? (
         <IoIosMoon className='dark:text-gray-50 text-3xl' />
       ) : (
         <IoMdSunny className='dark:text-gray-50 text-3xl' />
