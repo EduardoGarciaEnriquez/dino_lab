@@ -10,7 +10,6 @@ function DinoLabIcon() {
           alt='Logo'
           src={Logo}
           width={40}
-          height={40}
         />
       </Link>
   )
